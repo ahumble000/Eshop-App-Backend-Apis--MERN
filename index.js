@@ -29,11 +29,7 @@ app.use('/api/products',productsRoutes);
 
 
 //  DATABASE CONNECTION
-// mongodb+srv://ahumble882:GMznoFLLyG7LgWWQ@eshop.54lsmxp.mongodb.net/?retryWrites=true&w=majority&appName=eshop
-// mongodb+srv://ahumble882:ipvu2N0TaYyB7JuD@cluster0.kdcqoqi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-//mongodb://127.0.0.1:27017/ESHOP
-
-mongoose.connect('mongodb+srv://ahumble882:GMznoFLLyG7LgWWQ@eshop.54lsmxp.mongodb.net/ESHOP?retryWrites=true&w=majority&appName=eshop')
+mongoose.connect('add_database_url')
 .then(() => console.log("Database is connected."))
 .catch((e) => console.log(e));
 

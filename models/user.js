@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
         default:false
     },
    
-    name : {
+    name : { 
         type : String,
         required: true,
         unique:true,
@@ -22,10 +22,15 @@ const userSchema = new mongoose.Schema({
     password : {
         type : String,
         required: true,
-        unique: true,
     },
 
-    cartData : {
+    role : {
+        type : String,
+        required : true,
+        default : 'user'
+    },
+
+    cartData : { 
         type:Object,
     },
 
